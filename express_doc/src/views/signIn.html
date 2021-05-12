@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!-- ?? BOOTSTRAP -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="col-lg-5 col-lg-offset-4">
+            <div class="row">
+                <div class="card border border-dark">
+                    <div class="card-header">
+                        <h2 class="text-center">Iniciar sesión</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <input id="username" type="text" placeholder="Usuario" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="contrasena" type="password" placeholder="Contraseña" class="form-control mt-3">
+                            </div>
+            
+                            <button id="loginBtn" type="submit" class="btn form-control btn-success mt-3">Iniciar sesión</button>
+
+                            <div class="form-group mt-4">
+                                <a href="/sign-Up"><h5>Sign Up</h5></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+function submitForm (){
+    console.log("hola desde submit form");
+}
+
+document.getElementById("loginBtn").addEventListener("click", function(e) {
+    console.log("btnLogin");
+  e.preventDefault();
+  console.log("hola");
+
+  submitForm()
+}); 
+
+    </script>
+</body>
+</html>
